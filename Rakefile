@@ -17,37 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "roman_numerals"
   gem.homepage = "http://github.com/gametheoretic/roman_numerals"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{use #to_roman to translate positive integers to an uppercase Roman numeral string representation}
+  gem.description = %Q{Gem grants any object which a) responds to :to_i, and b) whose integer representation is greater than zero, to translate itself to an uppercase string of Roman numerals.\n\nE.g., 9.to_roman will return "IX"; "1876".to_roman will return "MDCCCLXXVI".\n\nNo tests included, due to author's lack of silliness.}
   gem.email = "gametheoretic@gmail.com"
   gem.authors = ["michael d. towle"]
   # dependencies defined in Gemfile
-end
-Jeweler::RubygemsDotOrgTasks.new
-
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
-
-task :default => :test
-
-require 'rdoc/task'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "roman_numerals #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
 end
