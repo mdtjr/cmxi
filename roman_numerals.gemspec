@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "roman_numerals"
+  s.name = "cmxi"
   s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -24,9 +24,9 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/roman_numerals.rb"
+    "lib/cmxi.rb"
   ]
-  s.homepage = "http://github.com/gametheoretic/roman_numerals"
+  s.homepage = "http://github.com/gametheoretic/cmxi"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.3"
