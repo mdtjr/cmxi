@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["michael d. towle"]
   s.date = "2013-11-28"
-  s.description = "Gem grants any object which a) responds to :to_i, and b) whose integer representation is greater than zero, to translate itself to an uppercase string of Roman numerals.\n\nE.g., 9.to_roman will return \"IX\"; \"1876\".to_roman will return \"MDCCCLXXVI\".\n\nNo tests included, due to author's lack of silliness."
+  s.description = "Gem grants any object which a) responds to :to_i, and b) whose integer representation is greater than zero, to translate itself to an uppercase string of Roman numerals via #to_roman.\n\nE.g., 9.to_roman will return \"IX\"; \"1876\".to_roman will return \"MDCCCLXXVI\".\n\nNo tests included, due to author's lacking necessary silliness."
   s.email = "gametheoretic@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -24,13 +24,14 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "cmxi.gemspec",
     "lib/cmxi.rb"
   ]
   s.homepage = "http://github.com/gametheoretic/cmxi"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.3"
-  s.summary = "use #to_roman to translate positive integers to an uppercase Roman numeral string representation"
+  s.summary = "For Roman numeral emergencies only."
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
